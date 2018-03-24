@@ -1,0 +1,99 @@
+body {
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.loader-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-squares {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70px;
+  animation: rot 3s infinite;
+}
+
+.loader-square {
+  width: 25px;
+  height: 25px;
+  background: black;
+  margin: 5px;
+  //border-radius: 50%;
+
+  &:nth-child(1) {
+    animation: moveup1 1s infinite;
+  }
+
+  &:nth-child(2) {
+    animation: moveup3 1s infinite;
+  }
+  &:nth-child(3) {
+    animation: moveup2 1s infinite;
+  }
+  &:nth-child(4) {
+    animation: moveup4 1s infinite;
+  }
+}
+
+@keyframes moveup1 {
+  0% {transform: translate(0px, 0px); }
+  15% {  transform: translate(1px, 1px); }
+  25% {  transform: translate(2px, 2px); }
+  38% { transform: translate(3px, 3px); }
+  50% { transform: translate(4px, 4px); }
+  68% { transform: translate(3px, 3px); }
+  75% { transform: translate(2px, 2px); }
+  85% { transform: translate(1px, 1px); }
+  100% { transform: translate(0px, 0px); }
+
+}
+
+@keyframes moveup2 {
+  0% {transform: translate(0px, 0px); }
+  15% {  transform: translate(1px, -1px); }
+  25% {  transform: translate(2px, -2px); }
+  38% { transform: translate(3px, -3px); }
+  50% { transform: translate(4px, -4px); }
+  68% { transform: translate(3px, -3px); }
+  75% { transform: translate(2px, -2px); }
+  85% { transform: translate(1px, -1px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes moveup3 {
+  0% {transform: translate(0px, 0px); }
+  15% {  transform: translate(-1px, 1px); }
+  25% {  transform: translate(-2px, 2px); }
+  38% { transform: translate(-3px, 3px); }
+  50% { transform: translate(-4px, 4px); }
+  68% { transform: translate(-3px, 3px); }
+  75% { transform: translate(-2px, 2px); }
+  85% { transform: translate(-1px, 1px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes moveup4 {
+  0% {transform: translate(0px, 0px); }
+  15% {  transform: translate(-1px, -1px); }
+  25% {  transform: translate(-2px, -2px); }
+  38% { transform: translate(-3px, -3px); }
+  50% { transform: translate(-4px, -4px); }
+  68% { transform: translate(-3px, -3px); }
+  75% { transform: translate(-2px, -2px); }
+  85% { transform: translate(-1px, -1px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes rot {
+  0% { transform: rotate(0);}
+  25% { transform: rotate(90deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(270deg);}
+  100%{ transform: rotate(360deg);}
+}

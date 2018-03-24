@@ -1,0 +1,43 @@
+@mixin transition($prop : all, $time-duration : .6s, $type: ease) {
+  -webkit-transition: $prop $time-duration $type;
+  -moz-transition: $prop $time-duration $type;
+  -ms-transition: $prop $time-duration $type;
+  -o-transition: $prop $time-duration $type;
+  transition: $prop $time-duration $type;
+}
+
+
+@mixin border-radius($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin font($type: $font__main, $weight: $regular, $style: normal) {
+  font-family: $type;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin main-button($y: 0, $x: 20px ) {
+  font-family: $font__main;
+  font-size: $font__size;
+  @include transition();
+  border-radius: 3px;
+  height: $button__height;
+  line-height: $button__height;
+  background: $color__background-button;
+  color: $color__button;
+  border: 0;
+  display: inline-block;
+  padding: $y $x;
+  margin-right: 7px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  text-align: center;
+
+  &:hover {
+    color: #fff;
+    background: $color__background-button-hover;
+  }
+}

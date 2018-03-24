@@ -1,0 +1,52 @@
+/*!
+Theme Name: Julian Hook Theme
+Author: Julian Hook
+Author URI: http://julianhook.com/
+version: 1.0.2
+Description: Website Theme
+*/
+
+/*--------------------------------------------------------------
+Bootstrap import, theme_mixins & variables of theme
+--------------------------------------------------------------*/
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Hind:400,700');
+@import "assets/variables";
+@import "assets/mixins";
+
+
+// Resets & base styles imports
+@import "assets/resets";
+@import "responsive/desktop";
+
+
+// Internet Explorer Breake point
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  @import "assets/ie";
+}
+@supports (-ms-accelerator:true) {
+  @import "assets/ie";
+}
+
+// Imports of plugins dropkick & preloader
+@import "plugins/dropkick";
+@import "plugins/preloader";
+
+
+/************** Resposive  ***************/
+
+@media all and (max-width: 1199px) {
+  @import "responsive/tablet-landscape";
+}
+
+@media all and (max-width: 992px) {
+  @import "responsive/tablet-portrate";
+}
+
+@media all and (max-width: 767px) {
+  @import "responsive/mobile-landscape";
+}
+
+@media all and (max-width: 425px) {
+  @import "responsive/mobile-portrate";
+}

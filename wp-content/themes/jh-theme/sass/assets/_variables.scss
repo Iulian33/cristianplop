@@ -1,0 +1,64 @@
+// Theme Colors
+$color-black : #000;
+$color-white : #fff;
+
+/* FONTS & BODY -----------------------*/
+$font__main: 'Hind', sans-serif;
+$font__size: 16px;
+$color__text-main: #404040;
+$font__headings: $font__main;
+$font__line-height-body: 25px;
+$paragraph_padding_bottom: $font__line-height-body;
+$color__background-body: $color-white;
+/*-------------------------------------*/
+
+
+
+/* BUTTON -----------------------------*/
+$button__height : 50px;
+$color__background-button: #e6e6e6;
+$color__background-button-hover: #B3B3B3;
+$color__button: #444444;
+/*-------------------------------------*/
+
+
+
+/* INPUTS -----------------------------*/
+$color__border-input: #ccc;
+$color__border-input-focus: $color__background-button;
+$color__border_input_error: #cc442e;
+$color__input-placeholder: $color__text-main;
+$input__placeholder_font_size: $font__size;
+$input__placeholder_opacity: 0.5;
+$color__text-input: $color__text-main;
+$color__text-input-focus: $color__text-main;
+/*-------------------------------------*/
+
+
+
+/* LINKS ------------------------------*/
+$color__link: #ff0000;
+$color__link-hover: midnightblue;
+/*-------------------------------------*/
+
+
+
+/* OTHER ------------------------------*/
+$color__background-hr: #ccc;
+$color__background-ins: #fff9c0;
+$color__border-abbr: #777;
+$center_width: 1200px;
+/*-------------------------------------*/
+
+
+
+/* FONT WEIGHTS ----------------------------*/
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$black: 900;
+/*-------------------------------------------*/
+
