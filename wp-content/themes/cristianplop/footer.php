@@ -7,12 +7,24 @@
  * @package Site Theme
  */
 ?>
-
-<footer class="mainFooter">
-    <div class="lowerFooter">
-
-    </div>
-</footer>
+<div class="container">
+    <footer class="mainFooter">
+        <div class="socials-container">
+            <ul class="socials-list">
+                <?php if (have_rows('footer_socials','option')):
+                    while (have_rows('footer_socials','option')) : the_row(); ?>
+                        <li>
+                            <a href="<?php the_sub_field('social_media_url'); ?>"
+                               target="_blank">
+                                <?php the_sub_field('social_media_name'); ?>
+                            </a>
+                        </li>
+                    <?php endwhile;
+                endif; ?>
+            </ul>
+        </div>
+    </footer>
+</div>
 </div>
 
 <div id="mobilemenu" class="displayNone"></div>

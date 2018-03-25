@@ -21,10 +21,13 @@
     <![endif]-->
     <?php wp_head();
     $resume_pdf_link = get_field('pdf_resume','option');
-    $resume_txt_link = get_field('cv_text_link','option'); ?>
+    $resume_txt_link = get_field('cv_text_link','option');
+    $body_backgroud = get_field('body_background','option'); ?>
 </head>
 
-<body>
+<body style="background-image: url(<?php echo $body_backgroud['url'];?>); ">
+<div class="circle-view">
+</div>
 <?php include('theme-includes/theme-loader.php'); ?>
 
 <div class="mainContainer">

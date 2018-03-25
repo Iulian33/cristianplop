@@ -2,6 +2,11 @@ $ = jQuery;
 
 $(document).ready(function($) {
 
+    var $moveable = $('.circle-view');
+    $(document).mousemove(function(e){
+        $moveable.css({'top': e.pageY,'left': e.pageX});
+    });
+
 	//initialize Owl Slider on Page if it isi set
 	if($('.pageSlider').length) {
 		$('.pageSlider').owlCarousel({
